@@ -1,4 +1,3 @@
-//메롱
 // node_modules 에 있는 express 관련 파일을 가져온다.
 var express = require('express')
 const path = require('path')
