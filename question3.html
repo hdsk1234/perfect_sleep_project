@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Sleep Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 >Last question!</h1>
+        <form>
+            <input type="text" placeholder="how old are you?">
+        </form>
+        <button class="back_btn" onclick="location.href = '/question2'">back</button>
+        <button class="next_btn" onclick="btn_click()">complete</button>
+    </div>
+    
+    <script>
+        function btn_click(){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('h1').remove();
+            document.querySelector('.back_btn').remove();
+            document.querySelector('.next_btn').remove();
+            document.querySelector('input').remove();
+
+            setTimeout(() => {
+                location.href = '/loading'
+            }, 500)
+        }
+    </script>
+</body>
+</html>
