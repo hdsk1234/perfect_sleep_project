@@ -29,12 +29,9 @@ app.get('/result', async function(req, res){
     return res.sendFile(__dirname + '/result.html');
 })
 
-// css 적용되려면 해야 하는 것들
+// css 적용되려면 해야 하는 것
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, ',/', 'views', '404.html'));
-})
 
 // 3000 포트로 서버 오픈
 app.listen(3000, function() {
