@@ -6,7 +6,7 @@ const path = require('path')
 var app = express()
 
 app.get('/', async function(req, res){
-    return res.sendFile(__dirname + '/main.html');
+    return res.sendFile(__dirname + '/index.html');
 })
 
 app.get('/question1', async function(req, res){
